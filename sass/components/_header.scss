@@ -10,7 +10,13 @@
   &__block {
     display: flex;
     align-items: center;
-    width: 1200px;
+    width: $mobile;
+    @media (min-width: $tablet) {
+      width: $tablet;
+    }
+    @media (min-width: $desktop) {
+      width: $desktop;
+    }
     min-height: 80px;
     margin: 0px auto 0px auto;
     padding: 0 15px 0 15px;

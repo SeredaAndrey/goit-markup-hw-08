@@ -1,4 +1,9 @@
 // начало стилей блока контактов
+.contacts {
+  @media screen and (max-width: $mobile) {
+    display: none;
+  }
+}
 .contacts__list {
   display: flex;
   align-items: center;

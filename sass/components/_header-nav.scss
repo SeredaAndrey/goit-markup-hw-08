@@ -1,5 +1,9 @@
 // начало стилей блока навигации
 .navigations {
+  @media screen and (max-width: $mobile) {
+    display: none;
+  }
+
   margin: 0;
   padding: 0;
 
