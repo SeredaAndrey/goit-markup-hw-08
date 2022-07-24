@@ -1,0 +1,19 @@
+body {
+  font-family: "Roboto", "Open+Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: $text-color-primary;
+  margin: 0;
+}
+.container {
+  width: 1200px;
+  margin: 0px auto 0px auto;
+  padding: 0;
+}
+button {
+  font: inherit;
+  font-family: "Roboto";
+}

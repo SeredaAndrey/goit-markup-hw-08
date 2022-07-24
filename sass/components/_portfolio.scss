@@ -1,0 +1,27 @@
+.portfolio {
+  padding-top: 94px;
+
+  &__title {
+    display: none;
+  }
+
+  &__container {
+    width: 1200px;
+    padding: 94px 15px 0 15px;
+    margin: 0 auto 94px auto;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: -15px;
+  }
+
+  &__item {
+    margin: 15px;
+
+    list-style-type: none;
+  }
+}

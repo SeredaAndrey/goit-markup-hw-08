@@ -1,0 +1,39 @@
+.social-links {
+  display: block;
+  justify-content: center;
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    list-style-type: none;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  &__link {
+    display: block;
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    border-radius: 50%;
+    background-color: $bgc-socialweb-futer;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-color: $bgc-button-accent;
+
+      .social-links__icon {
+        fill: $fill-socialweb-teams-accent;
+      }
+    }
+  }
+}

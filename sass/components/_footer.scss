@@ -1,0 +1,54 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: $bgc-footer;
+
+  &--accent {
+    fill: $fill-socialweb-teams-accent;
+  }
+
+  &__block {
+    &-content {
+      display: flex;
+      width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+
+    &-adress {
+      display: block;
+      width: 231px;
+      margin: 0;
+      padding: 0;
+
+      &--geometry {
+        margin-right: 70px;
+      }
+    }
+
+    &-sign--geometry {
+      margin-top: 12px;
+    }
+  }
+
+  &__block-sign--geometry {
+    margin-top: 12px;
+  }
+
+  &__block-social--geometry {
+    margin-right: 93px;
+    margin-top: 12px;
+  }
+
+  &__paragrapf {
+    margin: 0 0 20px 0;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $text-color-footer;
+  }
+}

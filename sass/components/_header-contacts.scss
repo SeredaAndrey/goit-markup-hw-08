@@ -1,0 +1,47 @@
+// начало стилей блока контактов
+.contacts__list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.contacts__item {
+  list-style-type: none;
+
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.contacts__link {
+  display: flex;
+  align-items: center;
+
+  text-decoration: none;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:visited,
+  &:link {
+    color: $text-color-seccondary;
+  }
+
+  &:hover,
+  &:focus {
+    color: $text-color-accent;
+  }
+}
+.contacts__icon {
+  margin-right: 10px;
+  fill: $text-color-seccondary;
+}
+
+.contacts__link:hover,
+.contacts__link:focus {
+  .contacts__icon {
+    fill: $text-color-accent;
+  }
+}
+// конец стилей блока контактов

@@ -1,0 +1,27 @@
+// начало стилей блока логотипа
+.logo {
+  &__link {
+    text-decoration: none;
+
+    cursor: pointer;
+  }
+  &__text {
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #2196f3;
+
+    &--darkling {
+      color: #000000;
+    }
+    &--lighting {
+      color: $text-color-footer;
+    }
+  }
+  &--footer-geometry {
+    margin-bottom: 20px;
+  }
+}
+// конец стилей блока логотипа

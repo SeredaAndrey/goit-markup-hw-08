@@ -1,0 +1,27 @@
+.header {
+  border-bottom: 1px solid $border-color-header;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $text-color-primary;
+
+  &__block {
+    display: flex;
+    align-items: center;
+    width: 1200px;
+    min-height: 80px;
+    margin: 0px auto 0px auto;
+    padding: 0 15px 0 15px;
+    border-bottom: 1px solid $border-color-header;
+  }
+}
+
+// геометрия размещения блоков в шапке
+.logo--header-geometry {
+  margin-right: 93px;
+}
+.contacts--header-geometry {
+  margin-left: auto;
+}

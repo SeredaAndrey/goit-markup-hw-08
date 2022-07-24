@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="./css/modern-normalize.css" />
+    <link rel="stylesheet" href="./css/styles.css" /> -->
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <title>Портфолио</title>
+  </head>
+  <body>
+    <!--шапка -->
+    <header class="header">
+      <div class="header__block">
+        <!-- логотип  -->
+        <div class="logo logo--header-geometry">
+          <a class="logo__link" href="./index.html">
+            <span class="logo__text">Web</span
+            ><span class="logo__text logo__text--darkling">Studio</span>
+          </a>
+        </div>
+        <!-- логотип  -->
+        <!-- навигация  -->
+        <nav class="navigations navigations--header-geometry">
+          <ul class="navigations__list">
+            <li class="navigations__item">
+              <a class="navigations__link" href="./index.html">Студия</a>
+            </li>
+            <li class="navigations__item">
+              <a
+                class="navigations__link navigations__link--active"
+                href="./portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="navigations__item">
+              <a class="navigations__link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- навигация  -->
+        <!-- контакты -->
+        <div class="contacts contacts--header-geometry">
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <a class="contacts__link" href="mailto:info@devstudio.com">
+                <svg class="contacts__icon" width="16" height="16">
+                  <use href="./images/sprite.svg#icon-mail"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__link" href="mailto:info@devstudio.com">
+                <svg class="contacts__icon" width="16" height="16">
+                  <use href="./images/sprite.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- контакты -->
+      </div>
+    </header>
+    <!--шапка -->
+
+    <!--контент-->
+    <main>
+      <section class="portfolio">
+        <h1 class="portfolio__title">Наши роботы</h1>
+        <!-- фильтр портфолио -->
+        <div class="filter">
+          <ul class="filter__list">
+            <li class="filter__item">
+              <button class="filter__button" type="button">Все</button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__button" type="button">Веб-сайты</button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__button" type="button">Приложения</button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__button" type="button">Дизайн</button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__button" type="button">Маркетинг</button>
+            </li>
+          </ul>
+        </div>
+        <!-- фильтр портфолио -->
+        <!-- карточки портфолио -->
+        <div class="portfolio__container">
+          <ul class="portfolio__list">
+            <li class="portfolio__item">
+              <!-- карточка портфолио -->
+              <div class="portfolio-case">
+                <a class="portfolio-case__link" href="">
+                  <div class="portfolio-case__box">
+                    <img
+                      class="portfolio-case__image"
+                      src="./images/technocrack.jpg"
+                      alt="веб-сайт технокряк"
+                      width="370"
+                      height="294"
+                    />
+                    <div class="portfolio-case__description">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </div>
+                  </div>
+                  <div class="portfolio-case__headlines">
+                    <h2 class="portfolio-case__title">Технокряк</h2>
+                    <p class="portfolio-case__type">Веб-сайт</p>
+                  </div>
+                </a>
+              </div>
+              <!-- карточка портфолио -->
+            </li>
+            <li class="portfolio__item">
+              <!-- карточка портфолио -->
+              <div class="portfolio-case">
+                <a class="portfolio-case__link" href="">
+                  <div class="portfolio-case__box">
+                    <img
+                      class="portfolio-case__image"
+                      src="./images/poster.jpg"
+                      alt="постер new orlean vs golden star"
+                      width="370"
+                      height="294"
+                    />
+                    <div class="portfolio-case__description">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Ipsum quae illum cum enim ipsam nisi animi, maxime
+                      praesentium possimus explicabo!
+                    </div>
+                  </div>
+                  <div class="portfolio-case__headlines">
+                    <h2 class="portfolio-case__title">
+                      Постер New Orlean vs Golden Star
+                    </h2>
+                    <p class="portfolio-case__type">Дизайн</p>
+                  </div>
+                </a>
+              </div>
+              <!-- карточка портфолио -->
+            </li>
+            <li class="portfolio__item">
+              <!-- карточка портфолио -->
+              <div class="portfolio-case">
+                <a class="portfolio-case__link" href="">
+                  <div class="portfolio-case__box">
+                    <img
+                      class="portfolio-case__image"
+                      src="./images/seafood.jpg"
+                      alt="ресторан seafood"
+                      width="370"
+                      height="294"
+                    />
+                    <div class="portfolio-case__description">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Dignissimos, illum? Facere suscipit iusto voluptatem eius
+                      blanditiis? Consequuntur dolor corporis iusto!
+                    </div>
+                  </div>
+                  <div class="portfolio-case__headlines">
+                    <h2 class="portfolio-case__title">Ресторан Seafood</h2>
+                    <p class="portfolio-case__type">Приложение</p>
+                  </div>
+                </a>
+              </div>
+              <!-- карточка портфолио -->
+            </li>
+            <li class="portfolio__item">
+              <!-- карточка портфолио -->
+              <div class="portfolio-case">
+                <a class="portfolio-case__link" href="">
+                  <div class="portfolio-case__box">
+                    <img
+                      class="portfolio-case__image"
+                      src="./images/prime.jpg"
+                      alt="проект prime"
+                      width="370"
+                      height="294"
+                    />
+                    <div class="portfolio-case__description">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Sint quidem recusandae officiis ab corrupti facilis minus
+                      rem temporibus blanditiis rerum.
+                    </div>
+                  </div>
+                  <div class="portfolio-case__headlines">
+                    <h2 class="portfolio-case__title">Проект Prime</h2>
+                    <p class="portfolio-case__type">Маркетинг</p>
+                  </div>
+                </a>
+              </div>
+              <!-- карточка портфолио -->
+            </li>
+            <li class="portfolio__item">
+              <!-- карточка портфолио -->
+              <div class="portfolio-case">
+                <a class="portfolio-case__link" href="">
+                  <div class="portfolio-case__box">
+                    <img
+                      class="portfolio-case__image"
+                      src="./images/boxes.jpg"
+                      alt="проект boxes"
+                      width="370"
+                      height="294"
+                    />
+                    <div class="portfolio-case__description">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quo consequuntur in facere ea pariatur? Perspiciatis enim
+                      maxime nam fugiat quos!
+                    </div>
+                  </div>
+                  <div class="portfolio-case__headlines">
+                    <h2 class="portfolio-case__title">Проект Boxes</h2>
+                    <p class="portfolio-case__type">Приложение</p>
+                  </div>
+                </a>
+              </div>
+              <!-- карточка портфолио -->
+            </li>
+            <li class="portfolio__item">
+              <!-- карточка портфолио -->
+              <div class="portfolio-case">
+                <a class="portfolio-case__link" href="">
+                  <div class="portfolio-case__box">
+                    <img
+                      class="portfolio-case__image"
+                      src="./images/mac.jpg"
+                      alt="inspiration has no borders"
+                      width="370"
+                      height="294"
+                    />
+                    <div class="portfolio-case__description">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Velit sunt ducimus fuga accusamus possimus est dolorem
+                      quae dicta? Excepturi, facilis?
+                    </div>
+                  </div>
+                  <div class="portfolio-case__headlines">
+                    <h2 class="portfolio-case__title">
+                      Inspiration has no Borders
+                    </h2>
+                    <p class="portfolio-case__type">Веб-сайт</p>
+                  </div>
+                </a>
+              </div>
+              <!-- карточка портфолио -->
+            </li>
+            <li class="portfolio__item">
+              <!-- карточка портфолио -->
+              <div class="portfolio-case">
+                <a class="portfolio-case__link" href="">
+                  <div class="portfolio-case__box">
+                    <img
+                      class="portfolio-case__image"
+                      src="./images/book.jpg"
+                      alt="издание limited edition"
+                      width="370"
+                      height="294"
+                    />
+                    <div class="portfolio-case__description">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Nobis obcaecati quae laborum dolorem quos nesciunt sed
+                      eveniet voluptas ullam quam?
+                    </div>
+                  </div>
+                  <div class="portfolio-case__headlines">
+                    <h2 class="portfolio-case__title">
+                      Издание Limited Edition
+                    </h2>
+                    <p class="portfolio-case__type">Дизайн</p>
+                  </div>
+                </a>
+              </div>
+              <!-- карточка портфолио -->
+            </li>
+            <li class="portfolio__item">
+              <!-- карточка портфолио -->
+              <div class="portfolio-case">
+                <a class="portfolio-case__link" href="">
+                  <div class="portfolio-case__box">
+                    <img
+                      class="portfolio-case__image"
+                      src="./images/lab.jpg"
+                      alt="проект lab"
+                      width="370"
+                      height="294"
+                    />
+                    <div class="portfolio-case__description">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Culpa maxime pariatur in, aliquid enim magni adipisci
+                      minus voluptatibus impedit hic.
+                    </div>
+                  </div>
+                  <div class="portfolio-case__headlines">
+                    <h2 class="portfolio-case__title">Проект LAB</h2>
+                    <p class="portfolio-case__type">Маркетинг</p>
+                  </div>
+                </a>
+              </div>
+              <!-- карточка портфолио -->
+            </li>
+            <li class="portfolio__item">
+              <!-- карточка портфолио -->
+              <div class="portfolio-case">
+                <a class="portfolio-case__link" href="">
+                  <div class="portfolio-case__box">
+                    <img
+                      class="portfolio-case__image"
+                      src="./images/notebook.jpg"
+                      alt="growing business"
+                      width="370"
+                      height="294"
+                    />
+                    <div class="portfolio-case__description">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Doloribus, saepe. Veritatis ex alias voluptate aliquam
+                      autem architecto suscipit consequuntur numquam?
+                    </div>
+                  </div>
+                  <div class="portfolio-case__headlines">
+                    <h2 class="portfolio-case__title">Growing Business</h2>
+                    <p class="portfolio-case__type">Приложение</p>
+                  </div>
+                </a>
+              </div>
+              <!-- карточка портфолио -->
+            </li>
+          </ul>
+        </div>
+        <!-- карточки портфолио -->
+      </section>
+    </main>
+    <!-- подвал -->
+    <footer class="footer">
+      <div class="footer__block-content">
+        <!-- начало блока логотип + адресс -->
+        <div class="footer__block-adress footer__block-adress--geometry">
+          <!-- логотип  -->
+          <div class="logo logo--footer-geometry">
+            <a class="logo__link" href="./index.html">
+              <span class="logo__text">Web</span
+              ><span class="logo__text logo__text--lighting">Studio</span>
+            </a>
+          </div>
+          <!-- логотип  -->
+          <!-- адресс -->
+          <address class="adress">
+            <ul class="adress__list">
+              <li class="adress__item">
+                <a
+                  class="adress__link"
+                  href="https://goo.gl/maps/ZZNhjZ9m74gt4B3U7"
+                  target="_blank"
+                  rel="noopener norefferer nofolow"
+                  ><span class="adress__text"
+                    >г. Киев, пр-т Леси Украинки, 26</span
+                  ></a
+                >
+              </li>
+              <li class="adress__item">
+                <a
+                  class="adress__link adress__link--darkness"
+                  href="mailto:info@example.com"
+                  ><span class="adress__text">info@example.com</span></a
+                >
+              </li>
+              <li class="adress__item">
+                <a
+                  class="adress__link adress__link--darkness"
+                  href="tel:+380991111111"
+                  ><span class="adress__text">+38 099 111 11 11</span></a
+                >
+              </li>
+            </ul>
+          </address>
+          <!-- адресс -->
+        </div>
+        <!-- конец блока логотип + адресс -->
+        <!-- начало блока иконок ссылок на социальные сети -->
+        <div class="footer__block-social footer__block-social--geometry">
+          <p class="footer__paragrapf">присоединяйтесь</p>
+          <div class="social-links">
+            <ul class="social-links__list">
+              <li class="social-links__item">
+                <a class="social-links__link" href="">
+                  <svg
+                    class="social-links__icon footer--accent"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/sprite.svg#icon-instagram"></use></svg
+                ></a>
+              </li>
+              <li class="social-links__item">
+                <a class="social-links__link" href="">
+                  <svg
+                    class="social-links__icon footer--accent"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/sprite.svg#icon-twitter"></use></svg
+                ></a>
+              </li>
+              <li class="social-links__item">
+                <a class="social-links__link" href="">
+                  <svg
+                    class="social-links__icon footer--accent"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/sprite.svg#icon-facebook"></use></svg
+                ></a>
+              </li>
+              <li class="social-links__item">
+                <a class="social-links__link" href="">
+                  <svg
+                    class="social-links__icon footer--accent"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/sprite.svg#icon-linkedin"></use></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- конец блока иконок ссылок на социальные сети -->
+        <!-- начало блока контейнера подписки -->
+        <div class="footer__block-sign footer__block-sign--geometry">
+          <p class="footer__paragrapf">Подпишитесь на рассылку</p>
+          <div class="block-subscription">
+            <label class="block-subscription__form">
+              <input
+                class="block-subscription__input"
+                type="text"
+                name="mail"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="block-subscription__button" type="submit">
+              Подписаться
+              <svg class="block-subscription__icon" width="24" height="24">
+                <use href="./images/sprite.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <!-- конец блока контейнера подписки -->
+      </div>
+    </footer>
+    <!-- подвал -->
+  </body>
+</html>

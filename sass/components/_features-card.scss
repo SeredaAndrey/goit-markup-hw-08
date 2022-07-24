@@ -1,0 +1,33 @@
+.features-card {
+  padding: 0;
+  margin-right: 0px;
+  width: 270px;
+  min-height: 101px;
+
+  &__container-icon {
+    display: inline-flex;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $bgc-seccondary;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $text-color-seccondary;
+  }
+}

@@ -1,0 +1,36 @@
+.team {
+  padding-top: 94px;
+
+  background-color: $bgc-seccondary;
+
+  &__container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px 94px 15px;
+  }
+
+  &__title {
+    padding: 0;
+    margin: 0 0 50px 0;
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: $text-color-primary;
+  }
+
+  &__list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+
+  &__item {
+    list-style-type: none;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
