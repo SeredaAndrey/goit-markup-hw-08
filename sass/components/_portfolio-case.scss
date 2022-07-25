@@ -1,5 +1,5 @@
 .portfolio-case {
-  width: 370px;
+  width: 100%;
   min-height: 404px;
   border: 1px solid $border-color-portfolio;
 
@@ -26,6 +26,7 @@
   }
 
   &__image {
+    width: 100%;
     display: block;
     z-index: 1;
   }

@@ -1,19 +1,31 @@
 .portfolio {
-  padding-top: 94px;
+  padding-top: 60px;
+  @media screen and (min-widht: $desktop) {
+    padding-top: 94px;
+  }
 
   &__title {
     display: none;
   }
 
   &__container {
-    width: 1200px;
-    padding: 94px 15px 0 15px;
+    width: 100%;
+    padding: 40px 15px 0;
     margin: 0 auto 94px auto;
+    width: $mobile;
+    @media screen and (min-widht: $tablet) {
+      width: $tablet;
+      padding: 94px 15px 0 15px;
+    }
+    @media screen and (min-widht: $desktop) {
+      width: $desktop;
+    }
   }
 
   &__list {
+    // width: 100%;
     display: flex;
-    flex-direction: row;
+    // flex-direction: row;
     flex-wrap: wrap;
     padding: 0;
     margin: -15px;
@@ -21,7 +33,13 @@
 
   &__item {
     margin: 15px;
-
     list-style-type: none;
+    width: calc(100% - 30px);
+  }
+  @media screen and (min-widht: $tablet) {
+    width: calc(100% / 2 - 30px);
+  }
+  @media screen and (min-widht: $desktop) {
+    width: calc(100% / 3 - 30px);
   }
 }

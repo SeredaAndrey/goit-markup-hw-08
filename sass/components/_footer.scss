@@ -10,21 +10,26 @@
 
   &__block {
     &-content {
-      // display: block;
+      display: block;
       text-align: center;
       width: $mobile;
       margin: 0 auto;
       padding: 0 15px;
       @media (min-width: $tablet) {
-        display: flex;
+        // display: flex;
         width: $tablet;
       }
       @media (min-width: $desktop) {
+        display: flex;
         width: $desktop;
         text-align: left;
       }
     }
-
+    &-tablet {
+      @media (min-width: $tablet) {
+        display: flex;
+      }
+    }
     &-adress {
       display: block;
       width: 231px;
@@ -34,6 +39,10 @@
         margin: 0 auto;
       }
       &--geometry {
+        @media (min-width: $tablet) {
+          margin-left: auto;
+          margin-right: 165px;
+        }
         @media (min-width: $desktop) {
           margin-right: 70px;
         }
@@ -45,17 +54,23 @@
     // }
   }
 
-  &__block-sign--geometry {
-    margin-top: 60px;
+  &__block-social--geometry {
+    margin-bottom: 60px;
+    @media (min-width: $tablet) {
+      margin-left: 0;
+      margin-right: auto;
+      margin-top: 6px;
+    }
     @media (min-width: $desktop) {
       margin-right: 93px;
       margin-top: 12px;
     }
   }
 
-  &__block-social--geometry {
+  &__block-sign--geometry {
+    // margin-top: 60px;
+
     @media (min-width: $desktop) {
-      margin-right: 93px;
       margin-top: 12px;
     }
   }
