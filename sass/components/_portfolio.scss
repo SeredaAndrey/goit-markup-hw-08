@@ -1,6 +1,6 @@
 .portfolio {
   padding-top: 60px;
-  @media screen and (min-widht: $desktop) {
+  @media screen and (min-width: $desktop) {
     padding-top: 94px;
   }
 
@@ -13,11 +13,11 @@
     padding: 40px 15px 0;
     margin: 0 auto 94px auto;
     width: $mobile;
-    @media screen and (min-widht: $tablet) {
+    @media screen and (min-width: $tablet) {
       width: $tablet;
       padding: 94px 15px 0 15px;
     }
-    @media screen and (min-widht: $desktop) {
+    @media screen and (min-width: $desktop) {
       width: $desktop;
     }
   }
@@ -36,10 +36,10 @@
     list-style-type: none;
     width: calc(100% - 30px);
   }
-  @media screen and (min-widht: $tablet) {
+  @media screen and (min-width: $tablet) {
     width: calc(100% / 2 - 30px);
   }
-  @media screen and (min-widht: $desktop) {
+  @media screen and (min-width: $desktop) {
     width: calc(100% / 3 - 30px);
   }
 }

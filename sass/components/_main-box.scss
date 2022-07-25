@@ -10,10 +10,10 @@ body {
 }
 .container {
   width: $mobile;
-  @media screen and (min-widht: $tablet) {
+  @media screen and (min-width: $tablet) {
     width: $tablet;
   }
-  @media screen and (min-widht: $desktop) {
+  @media screen and (min-width: $desktop) {
     width: $desktop;
   }
   margin: 0px auto;
