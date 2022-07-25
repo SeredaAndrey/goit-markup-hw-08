@@ -1134,10 +1134,18 @@ button {
 }
 
 .portfolio {
-  padding-top: 60px;
+  margin: 0 auto;
+  padding: 60px 15px 0;
+  width: 480px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio {
+    width: 768px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .portfolio {
+    width: 1200px;
     padding-top: 94px;
   }
 }
@@ -1145,15 +1153,14 @@ button {
   display: none;
 }
 .portfolio__container {
-  width: 100%;
-  padding: 40px 15px 0;
+  padding: 40px 0 0 0;
   margin: 0 auto 94px auto;
   width: 480px;
 }
 @media screen and (min-width: 768px) {
   .portfolio__container {
     width: 768px;
-    padding: 94px 15px 0 15px;
+    padding: 94px 0 0 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1176,36 +1183,37 @@ button {
   width: calc(100% - 30px);
 }
 @media screen and (min-width: 768px) {
-  .portfolio {
+  .portfolio__item {
     width: calc(50% - 30px);
   }
 }
 @media screen and (min-width: 1200px) {
-  .portfolio {
+  .portfolio__item {
     width: calc(33.3333333333% - 30px);
   }
 }
 
+.filter__container {
+  text-align: center;
+  padding: 0;
+  margin: 0 auto;
+}
 .filter__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 0;
   margin: -4px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 @media screen and (min-width: 768px) {
   .filter__list {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    text-align: center;
   }
 }
 .filter__item {
+  display: block;
   list-style-type: none;
   margin: 4px;
 }
