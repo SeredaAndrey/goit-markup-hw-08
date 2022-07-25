@@ -1,9 +1,12 @@
 .activity {
+  @media screen and (max-width: $desktop) {
+    display: none;
+  }
   padding-top: 94px;
   padding-bottom: 94px;
 
   &__container {
-    width: 1200px;
+    width: 100%;
     margin: 0 auto;
     padding: 0 15px;
   }
