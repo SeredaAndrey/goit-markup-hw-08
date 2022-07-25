@@ -8,13 +8,20 @@
   &__text {
     font-family: "Raleway";
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: #2196f3;
+    @media screen and (min-width: $desktop) {
+      font-size: 26px;
+      line-height: 1.19;
+    }
 
     &--darkling {
-      color: #000000;
+      color: #212121;
+      @media screen and (min-width: $desktop) {
+        color: #000000;
+      }
     }
     &--lighting {
       color: $text-color-footer;
