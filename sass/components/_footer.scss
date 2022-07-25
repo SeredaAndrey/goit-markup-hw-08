@@ -10,6 +10,8 @@
 
   &__block {
     &-content {
+      // display: block;
+      text-align: center;
       width: $mobile;
       margin: 0 auto;
       padding: 0 15px;
@@ -19,32 +21,43 @@
       }
       @media (min-width: $desktop) {
         width: $desktop;
+        text-align: left;
       }
     }
 
     &-adress {
       display: block;
       width: 231px;
-      margin: 0;
+      margin: 0 auto 60px auto;
       padding: 0;
-
+      @media (min-width: $desktop) {
+        margin: 0 auto;
+      }
       &--geometry {
-        margin-right: 70px;
+        @media (min-width: $desktop) {
+          margin-right: 70px;
+        }
       }
     }
 
-    &-sign--geometry {
+    // &-sign--geometry {
+    //   margin-top: 12px;
+    // }
+  }
+
+  &__block-sign--geometry {
+    margin-top: 60px;
+    @media (min-width: $desktop) {
+      margin-right: 93px;
       margin-top: 12px;
     }
   }
 
-  &__block-sign--geometry {
-    margin-top: 12px;
-  }
-
   &__block-social--geometry {
-    margin-right: 93px;
-    margin-top: 12px;
+    @media (min-width: $desktop) {
+      margin-right: 93px;
+      margin-top: 12px;
+    }
   }
 
   &__paragrapf {
