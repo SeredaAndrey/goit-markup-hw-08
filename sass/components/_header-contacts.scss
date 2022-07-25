@@ -1,6 +1,6 @@
 // начало стилей блока контактов
 .contacts {
-  @media screen and (max-width: $mobile) {
+  @media screen and (max-width: $desktop) {
     display: none;
   }
 }

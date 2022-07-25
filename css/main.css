@@ -389,7 +389,7 @@ button {
   margin: 0;
   padding: 0;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1200px) {
   .navigations {
     display: none;
   }
@@ -433,7 +433,7 @@ button {
   display: block;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1200px) {
   .contacts {
     display: none;
   }
@@ -487,13 +487,9 @@ button {
 
 .hero {
   background-color: #2f303a;
+  width: 480px;
+  height: 400px;
   margin: 0 auto 0;
-}
-@media screen and (min-width: 480px) {
-  .hero {
-    width: 480px;
-    height: 400px;
-  }
 }
 @media screen and (min-width: 768px) {
   .hero {
@@ -675,9 +671,19 @@ button {
   }
 }
 .activity__container {
-  width: 100%;
   margin: 0 auto;
   padding: 0 15px;
+  width: 480px;
+}
+@media screen and (min-width: 768px) {
+  .activity__container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .activity__container {
+    width: 1200px;
+  }
 }
 .activity__title {
   padding: 0;
@@ -936,12 +942,22 @@ button {
   fill: #ffffff;
 }
 .footer__block-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 1200px;
+  width: 480px;
   margin: 0 auto;
   padding: 0 15px;
+}
+@media (min-width: 768px) {
+  .footer__block-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 768px;
+  }
+}
+@media (min-width: 1200px) {
+  .footer__block-content {
+    width: 1200px;
+  }
 }
 .footer__block-adress {
   display: block;

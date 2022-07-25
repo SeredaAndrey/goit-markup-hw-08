@@ -6,9 +6,21 @@
   padding-bottom: 94px;
 
   &__container {
-    width: 100%;
+    // width: 100%;
     margin: 0 auto;
     padding: 0 15px;
+
+    width: $mobile;
+    // margin-left: auto;
+    // margin-right: auto;
+    // padding: 0 15px 60px 15px;
+    @media screen and (min-width: $tablet) {
+      width: $tablet;
+    }
+    @media screen and (min-width: $desktop) {
+      width: $desktop;
+      // padding: 0 15px 94px 15px;
+    }
   }
 
   &__title {
