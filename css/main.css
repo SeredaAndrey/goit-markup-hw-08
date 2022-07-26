@@ -720,6 +720,7 @@ button {
 .team {
   padding-top: 60px;
   margin-top: 60px;
+  min-width: 480px;
   background-color: #f5f4fa;
 }
 @media screen and (min-width: 1200px) {
