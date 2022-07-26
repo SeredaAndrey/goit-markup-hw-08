@@ -1,6 +1,6 @@
 // начало стилей блока навигации
 .navigations {
-  @media screen and (max-width: $desktop) {
+  @media screen and (max-width: $tablet) {
     display: none;
   }
 

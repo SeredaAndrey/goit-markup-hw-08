@@ -26,7 +26,10 @@
 
 // геометрия размещения блоков в шапке
 .logo--header-geometry {
-  margin-right: 93px;
+  margin-right: 88px;
+  @media (min-width: $desktop) {
+    margin-right: 93px;
+  }
 }
 .contacts--header-geometry {
   margin-left: auto;

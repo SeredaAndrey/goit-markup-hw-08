@@ -7,6 +7,10 @@
     height: 400px;
   }
   @media screen and (min-width: $desktop) {
+    width: $desktop;
+    height: 600px;
+  }
+  @media screen and (min-width: 1600px) {
     width: 1600px;
     height: 600px;
   }

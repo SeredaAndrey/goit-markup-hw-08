@@ -306,7 +306,12 @@ button {
 }
 
 .logo--header-geometry {
-  margin-right: 93px;
+  margin-right: 88px;
+}
+@media (min-width: 1200px) {
+  .logo--header-geometry {
+    margin-right: 93px;
+  }
 }
 
 .contacts--header-geometry {
@@ -389,7 +394,7 @@ button {
   margin: 0;
   padding: 0;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 768px) {
   .navigations {
     display: none;
   }
@@ -433,28 +438,39 @@ button {
   display: block;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 768px) {
   .contacts {
     display: none;
   }
 }
 
 .contacts__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin: 0;
   padding: 0;
 }
+@media screen and (min-width: 1200px) {
+  .contacts__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 
 .contacts__item {
+  display: block;
   list-style-type: none;
+  margin-bottom: 10px;
 }
-.contacts__item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (min-width: 1200px) {
+  .contacts__item {
+    margin-bottom: 0;
+  }
+  .contacts__item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .contacts__link {
@@ -498,6 +514,12 @@ button {
   }
 }
 @media screen and (min-width: 1200px) {
+  .hero {
+    width: 1200px;
+    height: 600px;
+  }
+}
+@media screen and (min-width: 1600px) {
   .hero {
     width: 1600px;
     height: 600px;
