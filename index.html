@@ -71,6 +71,7 @@
           type="button"
           class="header__button"
           aria-expanded="false"
+          aria-controls="header__menu-container"
           data-menu-button
         >
           <svg
@@ -90,7 +91,13 @@
         </button>
         <!-- кнопка меню смартфона -->
         <!-- меню смартфона -->
-        <div class="header__menu-container" data-menu>контент меню</div>
+        <div
+          class="header__menu-container"
+          id="header__menu-container"
+          data-menu
+        >
+          контент меню
+        </div>
         <!-- меню смартфона -->
       </div>
     </header>
