@@ -13,7 +13,7 @@
     &-content {
       display: block;
       text-align: center;
-      min-width: $tablet;
+      min-width: $mobile;
       margin: 0 auto;
       padding: 0 15px;
       @media (min-width: $tablet) {

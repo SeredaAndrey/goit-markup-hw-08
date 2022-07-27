@@ -1161,7 +1161,7 @@ button {
 .footer__block-content {
   display: block;
   text-align: center;
-  min-width: 768px;
+  min-width: 480px;
   margin: 0 auto;
   padding: 0 15px;
 }
