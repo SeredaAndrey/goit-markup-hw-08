@@ -26,7 +26,7 @@
         </div>
         <!-- логотип  -->
         <!-- навигация  -->
-        <nav class="navigations navigations--header-geometry">
+        <nav class="navigations navigations--header-geometry" data-menu-nav>
           <ul class="navigations__list">
             <li class="navigations__item">
               <a class="navigations__link" href="./index.html">Студия</a>
@@ -45,27 +45,75 @@
         </nav>
         <!-- навигация  -->
         <!-- контакты -->
-        <div class="contacts contacts--header-geometry">
+        <div class="contacts contacts--header-geometry" data-menu-cont>
           <ul class="contacts__list">
             <li class="contacts__item">
               <a class="contacts__link" href="mailto:info@devstudio.com">
                 <svg class="contacts__icon" width="16" height="16">
                   <use href="./images/sprite.svg#icon-mail"></use>
                 </svg>
-                info@devstudio.com
+                <spam class="contacts__link-text">info@devstudio.com</spam>
               </a>
             </li>
             <li class="contacts__item">
-              <a class="contacts__link" href="mailto:info@devstudio.com">
+              <a class="contacts__link" href="tel:+380961111111">
                 <svg class="contacts__icon" width="16" height="16">
                   <use href="./images/sprite.svg#icon-smartphone"></use>
                 </svg>
-                +38 096 111 11 11
+                <span class="contacts__link-text contacts__link-text--bigger"
+                  >+38 096 111 11 11</span
+                >
               </a>
             </li>
           </ul>
         </div>
         <!-- контакты -->
+        <!-- кнопка меню смартфона -->
+        <button
+          type="button"
+          class="header__button"
+          aria-expanded="false"
+          aria-controls="header__menu-container"
+          data-menu-button
+        >
+          <svg
+            width="40"
+            height="40"
+            aria-label="переключатель мобильного меню"
+          >
+            <use
+              class="header__button-icoclose"
+              href="./images/sprite.svg#icon-close40"
+            ></use>
+            <use
+              class="header__button-icomenu"
+              href="./images/sprite.svg#icon-menu40"
+            ></use>
+          </svg>
+        </button>
+        <!-- кнопка меню смартфона -->
+        <!-- меню смартфона -->
+        <div
+          class="header__menu-container"
+          id="header__menu-container"
+          data-menu
+        >
+          <ul class="header__social-list" data-menu-social>
+            <li class="header__social-item">
+              <a href="" class="header__social-link">Instagram</a>
+            </li>
+            <li class="header__social-item">
+              <a href="" class="header__social-link">Twitter</a>
+            </li>
+            <li class="header__social-item">
+              <a href="" class="header__social-link">Facebook</a>
+            </li>
+            <li class="header__social-item">
+              <a href="" class="header__social-link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+        <!-- меню смартфона -->
       </div>
     </header>
     <!--шапка -->
@@ -456,5 +504,6 @@
       </div>
     </footer>
     <!-- подвал -->
+    <script src="./jc/menu.jc"></script>
   </body>
 </html>

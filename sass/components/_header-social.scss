@@ -1,0 +1,38 @@
+.header__social {
+  &-list {
+    display: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    @media screen and (max-width: $tablet) {
+      &.is-open {
+        display: flex;
+        position: absolute;
+        z-index: 13;
+        top: 726px;
+        left: 40px;
+      }
+    }
+  }
+  &-item {
+    margin: 0;
+    padding: 0;
+    &:not(:last-child) {
+      padding-right: 10px;
+      margin-right: 10px;
+      border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
+  }
+  &-link {
+    margin: 0;
+    padding: 0;
+
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+
+    color: $text-color-accent;
+  }
+}
