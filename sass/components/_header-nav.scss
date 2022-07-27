@@ -2,29 +2,50 @@
 .navigations {
   @media screen and (max-width: $tablet) {
     display: none;
+    &.is-open {
+      display: block;
+      position: absolute;
+      z-index: 12;
+      top: 0;
+      left: 0;
+    }
   }
 
   margin: 0;
   padding: 0;
 
   &__list {
-    display: flex;
-    align-items: center;
-    margin: 0;
+    margin: 48px 40px;
     padding: 0;
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
   }
 
   &__item {
     list-style-type: none;
-
     &:not(:last-child) {
-      margin-right: 50px;
+      margin: 0 0 32px 0;
+      @media screen and (min-width: $tablet) {
+        margin: 0 50px 0 0;
+      }
     }
   }
 
   &__link {
     position: relative;
-
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 0.98;
+    letter-spacing: 0.02em;
+    @media screen and (min-width: $tablet) {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+    }
     &:visited,
     &:link {
       color: $text-color-primary;
@@ -43,10 +64,16 @@
       content: "";
       width: 100%;
       height: 4px;
-      bottom: -32px;
+      bottom: -10px;
       border-radius: 2px;
       background-color: $text-color-accent;
       display: block;
+      @media screen and (min-width: $tablet) {
+        bottom: -21px;
+      }
+      @media screen and (min-width: $desktop) {
+        bottom: -32px;
+      }
     }
   }
 }
