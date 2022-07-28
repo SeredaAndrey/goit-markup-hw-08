@@ -1015,6 +1015,17 @@ button {
 .teammate__image {
   width: 100%;
   display: block;
+  height: 460px;
+}
+@media screen and (min-width: 768px) {
+  .teammate__image {
+    height: 374px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .teammate__image {
+    height: 260px;
+  }
 }
 .teammate__description {
   padding: 30px 0;
@@ -1496,9 +1507,22 @@ button {
   overflow: hidden;
 }
 .portfolio-case__image {
-  width: 100%;
   display: block;
   z-index: 1;
+  width: 450px;
+  height: 294px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-case__image {
+    width: 354px;
+    height: 294px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-case__image {
+    width: 370px;
+    height: 294px;
+  }
 }
 .portfolio-case__description {
   position: absolute;

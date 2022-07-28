@@ -8,6 +8,13 @@
   &__image {
     width: 100%;
     display: block;
+    height: 460px;
+    @media screen and (min-width: $tablet) {
+      height: 374px;
+    }
+    @media screen and (min-width: $desktop) {
+      height: 260px;
+    }
   }
 
   &__description {

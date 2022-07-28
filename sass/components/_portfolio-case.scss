@@ -26,9 +26,19 @@
   }
 
   &__image {
-    width: 100%;
+    // width: 100%;
     display: block;
     z-index: 1;
+    width: 450px;
+    height: 294px;
+    @media screen and (min-width: $tablet) {
+      width: 354px;
+      height: 294px;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 370px;
+      height: 294px;
+    }
   }
 
   &__description {

@@ -206,31 +206,67 @@
           <h2 class="activity__title">Чем мы занимаемся</h2>
           <ul class="activity__list">
             <li class="activity__item">
-              <img
-                class="activity__image"
-                src="./images/box1.jpg"
-                alt="Разработка сайтов"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/activity/desktop_1x.webp 1x,
+                    ./images/activity/desktop_2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  srcset="
+                    ./images/activity/desktop_1x.jpg 1x,
+                    ./images/activity/desktop_2x.jpg 2x
+                  "
+                  src="./images/activity/desktop_1x.jpg"
+                  alt="Разработка сайтов"
+                  width="370"
+                  height="294"
+                />
+              </picture>
             </li>
             <li class="activity__item">
-              <img
-                class="activity__image"
-                src="./images/box2.jpg"
-                alt="Разработка мобильных приложений"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/activity/mobile_1x.webp 1x,
+                    ./images/activity/mobile_2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  srcset="
+                    ./images/activity/mobile_1x.jpg 1x,
+                    ./images/activity/mobile_2x.jpg 2x
+                  "
+                  src="./images/activity/mobile_1x.jpg"
+                  alt="Разработка мобильных приложений"
+                  width="370"
+                  height="294"
+                />
+              </picture>
             </li>
             <li class="activity__item">
-              <img
-                class="activity__image"
-                src="./images/box3.jpg"
-                alt="Веб дизайн"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/activity/design_1x.webp 1x,
+                    ./images/activity/design_2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  srcset="
+                    ./images/activity/design_1x.jpg 1x,
+                    ./images/activity/design_2x.jpg 2x
+                  "
+                  src="./images/activity/design_1x.jpg"
+                  alt="Веб дизайн"
+                  width="370"
+                  height="294"
+                />
+              </picture>
             </li>
           </ul>
         </div>
@@ -244,12 +280,28 @@
             <li class="team__item">
               <!-- начало блока карточки участника комманды -->
               <div class="teammate">
-                <img
-                  class="teammate__image"
-                  src="./images/igor-demianenko.jpg"
-                  alt="Игорь Демьяненко"
-                  width="270"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/teams/w450/demianenko450_2x.webp  767w,
+                      ./images/teams/w354/demianenko354_2x.webp 1199w,
+                      ./images/teams/w270/demianenko270_2x.webp 1200w
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    class="teammate__image"
+                    srcset="
+                      ./images/teams/w450/demianenko450_2x.jpg  767w,
+                      ./images/teams/w354/demianenko354_2x.jpg 1199w,
+                      ./images/teams/w270/demianenko270_2x.jpg 1200w
+                    "
+                    src="./images/teams/w450/demianenko450_2x.jpg"
+                    sizes="(min-width: 960) 25vw, 
+                    (min-width: 576) 50vw , 100vw"
+                    alt="Игорь Демьяненко"
+                  />
+                </picture>
                 <div class="teammate__description">
                   <h3 class="teammate__name">Игорь Демьяненко</h3>
                   <p class="teammate__specialty">Product Designer</p>
@@ -314,12 +366,28 @@
             <li class="team__item">
               <!-- начало блока карточки участника комманды -->
               <div class="teammate">
-                <img
-                  class="teammate__image"
-                  src="./images/olga-repina.jpg"
-                  alt="Ольга Репина"
-                  width="270"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/teams/w450/repina450_2x.webp  767w,
+                      ./images/teams/w354/repina354_2x.webp 1199w,
+                      ./images/teams/w270/repina270_2x.webp 1200w
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    class="teammate__image"
+                    srcset="
+                      ./images/teams/w450/repina450_2x.jpg  767w,
+                      ./images/teams/w354/repina354_2x.jpg 1199w,
+                      ./images/teams/w270/repina270_2x.jpg 1200w
+                    "
+                    src="./images/teams/w450/repina450_2x.jpg"
+                    sizes="(min-width: 960) 25vw, 
+                    (min-width: 576) 50vw , 100vw"
+                    alt="Ольга Репина"
+                  />
+                </picture>
                 <div class="teammate__description">
                   <h3 class="teammate__name">Ольга Репина</h3>
                   <p class="teammate__specialty">Frontend Developer</p>
@@ -384,12 +452,28 @@
             <li class="team__item">
               <!-- начало блока карточки участника комманды -->
               <div class="teammate">
-                <img
-                  class="teammate__image"
-                  src="./images/nikolay-tarasov.jpg"
-                  alt="Николай Тарасов"
-                  width="270"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/teams/w450/tarasov450_2x.webp  767w,
+                      ./images/teams/w354/tarasov354_2x.webp 1199w,
+                      ./images/teams/w270/tarasov270_2x.webp 1200w
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    class="teammate__image"
+                    srcset="
+                      ./images/teams/w450/tarasov450_2x.jpg  767w,
+                      ./images/teams/w354/tarasov354_2x.jpg 1199w,
+                      ./images/teams/w270/tarasov270_2x.jpg 1200w
+                    "
+                    src="./images/teams/w450/tarasov450_2x.jpg"
+                    sizes="(min-width: 960) 25vw, 
+                    (min-width: 576) 50vw , 100vw"
+                    alt="Николай Тарасов"
+                  />
+                </picture>
                 <div class="teammate__description">
                   <h3 class="teammate__name">Николай Тарасов</h3>
                   <p class="teammate__specialty">Marketing</p>
@@ -454,12 +538,28 @@
             <li class="team__item">
               <!-- начало блока карточки участника комманды -->
               <div class="teammate">
-                <img
-                  class="teammate__image"
-                  src="./images/mihail_ermakov.jpg"
-                  alt="Михаил Ермаков"
-                  width="270"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/teams/w450/ermakov450_1x.webp  767w,
+                      ./images/teams/w450/ermakov450_2x.webp  767w,
+                      ./images/teams/w354/ermakov354_2x.webp 1199w,
+                      ./images/teams/w270/ermakov270_2x.webp 1200w
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    class="teammate__image"
+                    srcset="
+                      ./images/teams/w450/ermakov450_2x.jpg  767w,
+                      ./images/teams/w354/ermakov354_2x.jpg 1199w,
+                      ./images/teams/w270/ermakov270_2x.jpg 1200w
+                    "
+                    src="./images/teams/w450/ermakov450_2x.jpg"
+                    sizes="(min-width: 960) 25vw, (min-width: 576) 50vw , 100vw"
+                    alt="Михаил Ермаков"
+                  />
+                </picture>
                 <div class="teammate__description">
                   <h3 class="teammate__name">Михаил Ермаков</h3>
                   <p class="teammate__specialty">UI Designer</p>
