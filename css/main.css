@@ -747,7 +747,7 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .hero__picture {
-    background-image: url("../images/hero//hero_1600_1x.jpg");
+    background-image: url("../images/hero/hero_1600_1x.jpg");
     background-size: cover;
   }
 }
