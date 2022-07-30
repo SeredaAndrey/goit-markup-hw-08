@@ -4,7 +4,8 @@
     display: none;
     &.is-open {
       display: block;
-      position: absolute;
+      // position: absolute;
+      position: fixed;
       z-index: 12;
       // top: 526px;
       bottom: 134px;

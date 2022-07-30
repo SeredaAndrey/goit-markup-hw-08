@@ -326,7 +326,7 @@ button {
 }
 
 .header__button {
-  position: absolute;
+  position: fixed;
   top: 10px;
   right: 15px;
   z-index: 11;
@@ -366,7 +366,7 @@ button {
 
 @media screen and (max-width: 768px) {
   .header__menu-container {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -375,6 +375,7 @@ button {
     background-color: #ffffff;
     z-index: 10;
     display: none;
+    overflow-y: scroll;
   }
   .header__menu-container.is-open {
     display: block;
@@ -546,7 +547,7 @@ button {
   }
   .contacts.is-open {
     display: block;
-    position: absolute;
+    position: fixed;
     z-index: 12;
     bottom: 134px;
     left: 40px;
@@ -673,7 +674,7 @@ button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    position: absolute;
+    position: fixed;
     z-index: 13;
     bottom: 48px;
     left: 40px;
@@ -1687,7 +1688,7 @@ button {
 }
 
 .modal {
-  position: absolute;
+  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
