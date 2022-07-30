@@ -7,6 +7,7 @@
   transform: translate(-50%, -50%) scale(1);
   min-width: 450px;
   min-height: 609px;
+  overflow-y: scroll;
   @media (min-width: $desktop) {
     min-width: 528px;
     min-height: 581px;

@@ -7,6 +7,12 @@ body {
   letter-spacing: 0.03em;
   color: $text-color-primary;
   margin: 0;
+  &.modal-open {
+    overflow: hidden;
+  }
+  &.menu-open {
+    overflow: hidden;
+  }
 }
 .container {
   width: $mobile;

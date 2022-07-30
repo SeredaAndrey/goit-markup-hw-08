@@ -1,13 +1,14 @@
 .portfolio-case {
-  width: 100%;
+  width: auto;
+  height: auto;
   min-height: 404px;
   border: 1px solid $border-color-portfolio;
 
   &__link {
     text-decoration: none;
     display: block;
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
 
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -23,20 +24,21 @@
     padding: 0;
     z-index: 2;
     overflow: hidden;
+    width: fit-content;
+    height: fit-content;
   }
 
   &__image {
-    // width: 100%;
     display: block;
     z-index: 1;
-    width: 100%;
+    width: calc($mobile - 30px);
     height: 294px;
     @media screen and (min-width: $tablet) {
-      width: 100%;
+      width: calc($tablet / 2 - 30px);
       height: 294px;
     }
     @media screen and (min-width: $desktop) {
-      width: 100%;
+      width: calc($desktop / 3 - 30px);
       height: 294px;
     }
   }

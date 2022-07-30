@@ -1,13 +1,17 @@
 .portfolio {
-  margin: 0 auto;
-  padding: 60px 15px 0;
-  width: $mobile;
-  @media screen and (min-width: $tablet) {
-    width: $tablet;
-  }
-  @media screen and (min-width: $desktop) {
-    width: $desktop;
-    padding-top: 94px;
+  width: auto;
+  height: fit-content;
+  &__container-filter {
+    margin: 0 auto;
+    padding: 60px 15px 0;
+    width: $mobile;
+    @media screen and (min-width: $tablet) {
+      width: $tablet;
+    }
+    @media screen and (min-width: $desktop) {
+      width: $desktop;
+      padding-top: 94px;
+    }
   }
 
   &__title {
@@ -16,37 +20,39 @@
 
   &__container {
     // width: 100%;
-    padding: 40px 0 0 0;
-    margin: 0 auto 94px auto;
+    padding: 40px 15px 60px 15px;
+    margin: 0 auto 0 auto;
     width: $mobile;
     @media screen and (min-width: $tablet) {
       width: $tablet;
-      padding: 30px 0 0 0;
+      padding: 30px 15px 60px 15px;
+      // margin-bottom: 60px;
     }
     @media screen and (min-width: $desktop) {
       width: $desktop;
-      padding: 50px 0 0 0;
+      padding: 50px 15px 94px 15px;
+      // margin-bottom: 94px;
     }
   }
 
   &__list {
-    // width: 100%;
     display: flex;
-    // flex-direction: row;
     flex-wrap: wrap;
     padding: 0;
     margin: -15px;
+    width: fit-content;
+    height: fit-content;
   }
 
   &__item {
     margin: 15px;
     list-style-type: none;
-    width: calc(100% - 30px);
+    width: calc($mobile - 30px);
     @media screen and (min-width: $tablet) {
-      width: calc(100% / 2 - 30px);
+      width: calc($tablet / 2 - 30px);
     }
     @media screen and (min-width: $desktop) {
-      width: calc(100% / 3 - 30px);
+      width: calc($desktop / 3 - 30px);
     }
   }
 }
