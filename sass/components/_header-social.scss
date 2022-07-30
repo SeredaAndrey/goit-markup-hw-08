@@ -7,10 +7,8 @@
     @media screen and (max-width: $tablet) {
       &.is-open {
         display: flex;
-        // position: absolute;
         position: fixed;
         z-index: 13;
-        // top: 726px;
         bottom: 48px;
         left: 40px;
       }

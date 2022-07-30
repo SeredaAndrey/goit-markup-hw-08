@@ -1,6 +1,9 @@
 .portfolio {
   width: auto;
   height: fit-content;
+  @media screen and (max-width: $mobile) {
+    width: $mobile;
+  }
   &__container-filter {
     margin: 0 auto;
     padding: 60px 15px 0;

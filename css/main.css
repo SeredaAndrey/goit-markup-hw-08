@@ -257,20 +257,9 @@ body.modal-open {
 body.menu-open {
   overflow: hidden;
 }
-
-.container {
-  width: 480px;
-  margin: 0px auto;
-  padding: 0;
-}
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
+@media screen and (max-width: 480px) {
+  body {
+    width: 480px;
   }
 }
 
@@ -294,7 +283,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 480px;
+  max-width: 480px;
   min-height: 60px;
   margin: 0px auto 0px auto;
   padding: 0 15px 0 15px;
@@ -302,12 +291,12 @@ button {
 }
 @media (min-width: 768px) {
   .header__block {
-    width: 768px;
+    max-width: 768px;
   }
 }
 @media (min-width: 1200px) {
   .header__block {
-    width: 1200px;
+    max-width: 1200px;
     min-height: 80px;
   }
 }
@@ -817,6 +806,11 @@ button {
   padding-top: 60px;
   padding-bottom: 0px;
 }
+@media screen and (max-width: 480px) {
+  .features {
+    width: 480px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .features {
     padding-top: 94px;
@@ -849,6 +843,12 @@ button {
   min-height: 76px;
   padding: 0;
   margin: -15px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .features__item {
   padding: 0;
@@ -1010,13 +1010,18 @@ button {
 
 .team {
   padding-top: 60px;
-  margin-top: 60px;
   min-width: 480px;
   background-color: #f5f4fa;
+}
+@media screen and (max-width: 480px) {
+  .team {
+    width: 480px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .team {
     margin-top: 0;
+    margin-top: 60px;
     padding-top: 94px;
   }
 }
@@ -1132,14 +1137,23 @@ button {
 .clients {
   padding-top: 60px;
 }
+@media screen and (max-width: 480px) {
+  .clients {
+    width: 480px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .clients {
     margin-top: 0;
     padding-top: 94px;
+    margin: 0 auto;
   }
 }
 .clients__container {
-  width: 480px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  min-width: 480px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 15px 60px 15px;
@@ -1147,11 +1161,13 @@ button {
 @media screen and (min-width: 768px) {
   .clients__container {
     width: 768px;
+    min-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .clients__container {
     width: 1200px;
+    min-width: 1200px;
     padding: 0 15px 94px 15px;
   }
 }
@@ -1184,20 +1200,26 @@ button {
   list-style-type: none;
   margin: -15px;
   padding: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .clients__item {
   margin: 15px;
   min-height: 92px;
-  width: calc(50% - 30px);
+  width: 210px;
 }
 @media screen and (min-width: 768px) {
   .clients__item {
-    width: calc(33.3333333333% - 30px);
+    width: 226px;
   }
 }
 @media screen and (min-width: 1200px) {
   .clients__item {
-    width: calc(16.6666666667% - 30px);
+    width: 170px;
   }
 }
 
@@ -1442,6 +1464,11 @@ button {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+}
+@media screen and (max-width: 480px) {
+  .portfolio {
+    width: 480px;
+  }
 }
 .portfolio__container-filter {
   margin: 0 auto;

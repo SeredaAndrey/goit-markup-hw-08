@@ -1,5 +1,8 @@
 .features {
   padding-top: 60px;
+  @media screen and (max-width: $mobile) {
+    width: $mobile;
+  }
   @media screen and (min-width: $desktop) {
     padding-top: 94px;
   }
@@ -27,6 +30,8 @@
     min-height: 76px;
     padding: 0;
     margin: -15px;
+    width: fit-content;
+    height: fit-content;
   }
 
   &__item {

@@ -10,14 +10,13 @@
   &__block {
     display: flex;
     align-items: center;
-    width: $mobile;
-    // position: relative;
+    max-width: $mobile;
     min-height: 60px;
     @media (min-width: $tablet) {
-      width: $tablet;
+      max-width: $tablet;
     }
     @media (min-width: $desktop) {
-      width: $desktop;
+      max-width: $desktop;
       min-height: 80px;
     }
     margin: 0px auto 0px auto;
@@ -37,7 +36,6 @@
   margin-left: auto;
 }
 .header__button {
-  // position: absolute;
   position: fixed;
   top: 10px;
   right: 15px;
