@@ -1,7 +1,10 @@
 .hero {
   background-color: $bgc-hero;
-  width: $mobile;
+  width: $min-mobile;
   height: 400px;
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
   @media screen and (min-width: $tablet) {
     width: $tablet;
     height: 400px;

@@ -13,9 +13,12 @@ body {
   &.menu-open {
     overflow: hidden;
   }
-  @media screen and (max-width: $mobile) {
-    width: $mobile;
+  @media screen and (max-width: $min-mobile) {
+    width: $min-mobile;
   }
+  // @media screen and (max-width: $mobile) {
+  //   width: $mobile;
+  // }
 }
 // .container {
 //   width: $mobile;

@@ -1,7 +1,11 @@
 .clients {
   padding-top: 60px;
-  @media screen and (max-width: $mobile) {
-    width: $mobile;
+  // width: $min-mobile;
+  @media screen and (min-width: $mobile) {
+    // width: $mobile;
+  }
+  @media screen and (min-width: $tablet) {
+    // width: $tablet;
   }
   @media screen and (min-width: $desktop) {
     margin-top: 0;
@@ -11,10 +15,13 @@
 
   &__container {
     width: fit-content;
-    min-width: $mobile;
+    min-width: $min-mobile;
     margin-left: auto;
     margin-right: auto;
     padding: 0 15px 60px 15px;
+    @media screen and (min-width: $mobile) {
+      width: $mobile;
+    }
     @media screen and (min-width: $tablet) {
       width: $tablet;
       min-width: $tablet;
@@ -56,8 +63,11 @@
 
   &__item {
     margin: 15px;
-    min-height: 92px;
+    // min-height: 92px;
     width: calc($mobile / 2 - 30px);
+    // @media screen and (max-width: $min-mobile) {
+    //   width: calc($mobile / 2 - 30px);
+    // }
     @media screen and (min-width: $tablet) {
       width: calc($tablet / 3 - 30px);
     }

@@ -10,8 +10,11 @@
   &__block {
     display: flex;
     align-items: center;
-    max-width: $mobile;
+    max-width: $min-mobile;
     min-height: 60px;
+    @media (min-width: $mobile) {
+      max-width: $mobile;
+    }
     @media (min-width: $tablet) {
       max-width: $tablet;
     }

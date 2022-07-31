@@ -1,5 +1,5 @@
 .footer {
-  min-width: $mobile;
+  min-width: $min-mobile;
   padding-top: 60px;
   padding-bottom: 60px;
 
@@ -13,9 +13,12 @@
     &-content {
       display: block;
       text-align: center;
-      min-width: $mobile;
+      min-width: $min-mobile;
       margin: 0 auto;
       padding: 0 15px;
+      @media (min-width: $mobile) {
+        width: $mobile;
+      }
       @media (min-width: $tablet) {
         width: $tablet;
       }

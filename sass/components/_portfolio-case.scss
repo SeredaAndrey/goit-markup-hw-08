@@ -1,8 +1,9 @@
 .portfolio-case {
   width: auto;
   height: auto;
-  min-height: 404px;
+  // min-height: 404px;
   border: 1px solid $border-color-portfolio;
+  overflow: hidden;
 
   &__link {
     text-decoration: none;
@@ -31,8 +32,12 @@
   &__image {
     display: block;
     z-index: 1;
-    width: calc($mobile - 30px);
-    height: 294px;
+    width: calc($min-mobile - 30px);
+    // height: 294px;
+    @media screen and (min-width: $mobile) {
+      width: calc($mobile - 30px);
+      // height: 294px;
+    }
     @media screen and (min-width: $tablet) {
       width: calc($tablet / 2 - 30px);
       height: 294px;

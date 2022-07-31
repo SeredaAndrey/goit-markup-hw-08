@@ -11,7 +11,10 @@
   &__input {
     margin: 0 auto 20px auto;
     padding: 15px 16px;
-    width: 450px;
+    width: calc($min-mobile - 30px);
+    @media (min-width: 480px) {
+      width: 450px;
+    }
     @media (min-width: $desktop) {
       width: 358px;
       margin: 0 12px 0 0;

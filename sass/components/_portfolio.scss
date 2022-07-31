@@ -1,13 +1,16 @@
 .portfolio {
   width: auto;
   height: fit-content;
-  @media screen and (max-width: $mobile) {
-    width: $mobile;
-  }
+  // @media screen and (max-width: $mobile) {
+  //   width: $mobile;
+  // }
   &__container-filter {
     margin: 0 auto;
     padding: 60px 15px 0;
-    width: $mobile;
+    width: $min-mobile;
+    @media screen and (min-width: $mobile) {
+      width: $mobile;
+    }
     @media screen and (min-width: $tablet) {
       width: $tablet;
     }
@@ -25,7 +28,10 @@
     // width: 100%;
     padding: 40px 15px 60px 15px;
     margin: 0 auto 0 auto;
-    width: $mobile;
+    width: $min-mobile;
+    @media screen and (min-width: $mobile) {
+      width: $mobile;
+    }
     @media screen and (min-width: $tablet) {
       width: $tablet;
       padding: 30px 15px 60px 15px;
@@ -50,7 +56,10 @@
   &__item {
     margin: 15px;
     list-style-type: none;
-    width: calc($mobile - 30px);
+    width: calc($min-mobile - 30px);
+    @media screen and (min-width: $mobile) {
+      width: calc($mobile - 30px);
+    }
     @media screen and (min-width: $tablet) {
       width: calc($tablet / 2 - 30px);
     }

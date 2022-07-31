@@ -1,17 +1,22 @@
 .features {
   padding-top: 60px;
-  @media screen and (max-width: $mobile) {
-    width: $mobile;
-  }
+  padding-bottom: 60px;
+  // width: $min-mobile;
+  // @media screen and (min-width: $tablet) {
+  //   padding-bottom: 60px;
+  // }
   @media screen and (min-width: $desktop) {
     padding-top: 94px;
+    padding-bottom: 0;
   }
-  padding-bottom: 0px;
 
   &__container {
-    width: $mobile;
+    width: $min-mobile;
     padding: 0 15px;
     margin: 0 auto;
+    @media screen and (min-width: $mobile) {
+      width: $mobile;
+    }
     @media screen and (min-width: $tablet) {
       width: $tablet;
     }
